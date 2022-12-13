@@ -1,5 +1,5 @@
 CAT0:
-  - '(cat0|CAT0|Cat0|\[x\] Blocker|\[x\] Critical|\[x\] Serious)'
+  - '(cat0|CAT0|Cat0|[x] Blocker|[x] Critical|[x] Serious)'
 CAT1:
   - '(cat1|CAT1|Cat1)'
 CAT2:
