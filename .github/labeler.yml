@@ -1,9 +1,9 @@
 CAT0:
-  - '(cat0|CAT0|Cat0|[x] Blocker|CRITICAL|SERIOUS|MODERATE)'
+  - '(cat0|CAT0|Cat0|\[x\] Blocker|\[x\] Critical|\[x\] Serious)'
 CAT1:
   - '(cat1|CAT1|Cat1)'
 CAT2:
-  - '(cat2|CAT2|Cat2)'
+  - '(cat2|CAT2|Cat2|\[x\] Moderate)'
 CAT3:
   - '(cat3|CAT3|Cat3)'
 CAT4:
