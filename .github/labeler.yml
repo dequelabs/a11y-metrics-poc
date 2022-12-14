@@ -1,15 +1,17 @@
 CAT0:
   - '(\[x\] Blocker|\[x\] Critical|\[x\] Serious)'
-CAT1:
-  - '(cat1|CAT1|Cat1)'
 CAT2:
   - '(cat2|CAT2|Cat2|\[x\] Moderate)'
-CAT3:
-  - '(cat3|CAT3|Cat3)'
-CAT4:
-  - '(cat4|CAT4|Cat4)'
 BLOCKER:
   - '\[x\] Blocker'
+CRITICAL:
+  - '\[x\] Critical'
+SERIOUS:
+  - '\[x\] Serious'
+MODERATE:
+  - '\[x\] Moderate'
+MIOR:
+  - '\[x\] Minor'
 VPAT:
   - '\[x\] Found in VPAT'
 wcag1.1.1:
