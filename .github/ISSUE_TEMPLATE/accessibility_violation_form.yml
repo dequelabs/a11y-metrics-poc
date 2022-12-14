@@ -2,8 +2,6 @@ name: Accessibility Violation
 description: Document an accessibility violation to be fixed
 title: "[A11Y]: "
 labels: ["a11y"]
-assignees:
-  - ''
 body:
   - type: markdown
     attributes:
@@ -123,7 +121,6 @@ body:
       label: How did you find this issue?
       description: Provide clear steps for how to reproduce this issue.
       placeholder: Tell us how you found this issue!
-      value: ""
     validations:
       required: true
   - type: textarea
@@ -132,7 +129,6 @@ body:
       label: What was the unexpected behaviour that causes the issue?
       description: Please describe what behaviors are causing the accessbility issue
       placeholder: Tell us what you see!
-      value: ""
     validations:
       required: true
   - type: textarea
@@ -141,7 +137,6 @@ body:
       label: What should have happened instead?
       description: Please provide us with the desired outcome of this issue
       placeholder: Give us help in how to fix this issue!
-      value: ""
     validations:
       required: true
   - type: input
@@ -157,7 +152,7 @@ body:
     attributes:
       label: Element Source Code
       description: Please copy and paste relevant element source. This will be automatically formatted into code, so no need for backticks.
-      render: javascript
+      render: HTML
     validations:
       required: false
   - type: textarea
