@@ -15,6 +15,8 @@ Thank you for taking the time to create this Accessibility Issue!
 ### Short Description
 <!-- Please provide a short descritpion of the issue -->
 
+
+
 ### Impact
 <!-- Please select the impact by putting an `x` in the `[ ]` like so `[x]` -->
 - [ ] Blocker
@@ -32,17 +34,25 @@ Example: steps to reproduce the behavior:
 4. See error...
 -->
 
+
+
 ### Current Behavior:
 <!-- A concise description of what you're experiencing. -->
 
+
+
 ### Expected Behavior:
 <!-- A concise description of what you expected to happen or help for how to fix this issue. -->
+
+
 
 ---
 ## Ticket Details
 
 ### Auditor ID / URL
 <!-- If this was found in manual testing, provide a link to the Auditor test run issue -->
+
+
 
 <details>
 <summary>Expand for extra context</summary>
@@ -59,9 +69,13 @@ Example: steps to reproduce the behavior:
 ## Screenshots
 <!-- Please provide links to relevant screenshots of the issue -->
 
+
+
 ---
 ## Additional context
 <!-- Add any other context or screenshots about the feature request here. -->
+
+
 
 ---
 ## Success Criteria

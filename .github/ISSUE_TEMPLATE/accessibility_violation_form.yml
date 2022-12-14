@@ -13,7 +13,6 @@ body:
       label: What happened?
       description: Please tell us briefly what the issue was
       placeholder: Tell us what you see!
-      value: "I found an accessiblity issue!"
     validations:
       required: true
   - type: dropdown
