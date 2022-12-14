@@ -34,6 +34,7 @@ body:
     attributes:
       label: Success Criteria
       description: What WCAG Success Criteria best matches this violation?
+      multiple: true
       options:
         - 1.1.1 Non-text Content
         - 1.2.1 Audio-only and Video-only (Prerecorded)
