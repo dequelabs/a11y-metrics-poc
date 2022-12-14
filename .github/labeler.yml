@@ -1,261 +1,261 @@
 CAT0:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '(\[x\] Blocker|\[x\] Critical|\[x\] Serious)'
 CAT2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Moderate'
 BLOCKER:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Blocker'
 CRITICAL:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Critical'
 SERIOUS:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Serious'
 MODERATE:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Moderate'
 MIOR:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Minor'
 CUSTOMER:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Found by Customer'
 VPAT:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] Found in VPAT'
 WCAG 1.1.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.1.1 Non-text Content'
 WCAG 1.2.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.1 Audio-only and Video-only \(Prerecorded\)'
 WCAG 1.2.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.2 Captions \(Prerecorded\)'
 WCAG 1.2.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.3 Audio Description or Media Alternative \(Prerecorded\)'
 WCAG 1.2.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.4 Captions \(Live\)'
 WCAG 1.2.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.5 Audio Description \(Prerecorded\)'
 WCAG 1.2.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.6 Sign Language \(Prerecorded\)'
 WCAG 1.2.7:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.7 Extended Audio Description \(Prerecorded\)'
 WCAG 1.2.8:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.8 Media Alternative \(Prerecorded\)'
 WCAG 1.2.9:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.2.9 Audio-only \(Live\)'
 WCAG 1.3.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.1 Info and Relationships'
 WCAG 1.3.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.2 Meaningful Sequence'
 WCAG 1.3.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.3 Sensory Characteristics'
 WCAG 1.3.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.4 Orientation'
 WCAG 1.3.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.5 Identify Input Purpose'
 WCAG 1.3.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.3.6 Identify Purpose'
 WCAG 1.4.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.1 Use of Color'
 WCAG 1.4.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.2 Audio Control'
 WCAG 1.4.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.3 Contrast (Minimum)'
 WCAG 1.4.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.4 Resize text'
 WCAG 1.4.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.5 Images of Text'
 WCAG 1.4.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.6 Contrast (Enhanced)'
 WCAG 1.4.7:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.7 Low or No Background Audio'
 WCAG 1.4.8:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.8 Visual Presentation'
 WCAG 1.4.9:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.9 Images of Text (No Exception)'
 WCAG 1.4.10:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.10 Reflow'
 WCAG 1.4.11:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.11 Non-text Contrast'
 WCAG 1.4.12:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.12 Text Spacing'
 WCAG 1.4.13:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 1.4.13 Content on Hover or Focus'
 WCAG 2.1.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.1.1 Keyboard'
 WCAG 2.1.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.1.2 No Keyboard Trap'
 WCAG 2.1.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.1.3 Keyboard (No Exception)'
 WCAG 2.1.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.1.4 Character Key Shortcuts'
 WCAG 2.2.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.1 Timing Adjustable'
 WCAG 2.2.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.2 Pause, Stop, Hide'
 WCAG 2.2.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.3 No Timing'
 WCAG 2.2.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.4 Interruptions'
 WCAG 2.2.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.5 Re-authenticating'
 WCAG 2.2.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.2.6 Timeouts'
 WCAG 2.3.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.3.1 Three Flashes or Below Threshold'
 WCAG 2.3.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.3.2 Three Flashes'
 WCAG 2.3.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.3.3 Animation from Interactions'
 WCAG 2.4.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.1 Bypass Blocks'
 WCAG 2.4.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.2 Page Titled'
 WCAG 2.4.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.3 Focus Order'
 WCAG 2.4.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.4 Link Purpose (In Context)'
 WCAG 2.4.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.5 Multiple Ways'
 WCAG 2.4.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.6 Headings and Labels'
 WCAG 2.4.7:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.7 Focus Visible'
 WCAG 2.4.8:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.8 Location'
 WCAG 2.4.9:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.9 Link Purpose (Link Only)'
 WCAG 2.4.10:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.4.10 Section Headings'
 WCAG 2.5.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.1 Pointer Gestures'
 WCAG 2.5.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.2 Pointer Cancellation'
 WCAG 2.5.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.3 Label in Name'
 WCAG 2.5.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.4 Motion Actuation'
 WCAG 2.5.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.5 Target Size'
 WCAG 2.5.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 2.5.6 Concurrent Input Mechanisms'
 WCAG 3.1.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.1 Language of Page'
 WCAG 3.1.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.2 Language of Parts'
 WCAG 3.1.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.3 Unusual Words'
 WCAG 3.1.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.4 Abbreviations'
 WCAG 3.1.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.5 Reading Level'
 WCAG 3.1.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.1.6 Pronunciation'
 WCAG 3.2.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.2.1 On Focus'
 WCAG 3.2.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.2.2 On Input'
 WCAG 3.2.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.2.3 Consistent Navigation'
 WCAG 3.2.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.2.4 Consistent Identification'
 WCAG 3.2.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.2.5 Change on Request'
 WCAG 3.3.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.1 Error Identification'
 WCAG 3.3.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.2 Labels or Instructions'
 WCAG 3.3.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.3 Error Suggestion'
 WCAG 3.3.4:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.4 Error Prevention (Legal, Financial, Data)'
 WCAG 3.3.5:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.5 Help'
 WCAG 3.3.6:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 3.3.6 Error Prevention (All)'
 WCAG 4.1.1:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 4.1.1 Parsing'
 WCAG 4.1.2:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 4.1.2 Name, Role, Value'
 WCAG 4.1.3:
-  - '[A11Y]'
+  - '\[A11Y\]'
   - '\[x\] 4.1.3 Status Messages'
