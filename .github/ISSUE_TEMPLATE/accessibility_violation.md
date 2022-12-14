@@ -2,7 +2,7 @@
 name: Accessibility Violation
 about: Document an accessibility violation to be fixed
 title: '[A11Y] '
-labels: 'A11Y'
+labels: 'A11Y', "PROD: axe-monitor"
 assignees: ''
 
 ---

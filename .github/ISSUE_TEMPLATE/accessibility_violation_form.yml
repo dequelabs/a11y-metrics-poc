@@ -1,7 +1,7 @@
 name: Accessibility Violation Form
 description: Document an accessibility violation to be fixed
 title: "[A11Y]: "
-labels: ["a11y"]
+labels: ["a11y", "PROD: axe-monitor"]
 body:
   - type: markdown
     attributes:
