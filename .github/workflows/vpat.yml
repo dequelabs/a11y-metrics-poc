@@ -1,0 +1,18 @@
+name: Generate a VPAT report
+
+on:
+  workflow_dispatch: # Manually trigger.
+  schedule:
+    - cron: "0 0 * * SUN" # Every Sunday at 00:00.
+
+jobs:
+  generate_report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dequelabs/action-vpat-report@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          product-name: axe DeveloperHub
+          output-file: vpats/{DATE}-{PRODUCT}.md
+          vpat-label: VPAT
+          additional-labels: "PROD: a11y-poc"
