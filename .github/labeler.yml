@@ -81,7 +81,7 @@ WCAG 1.4.2:
   - '(\[x\] 1.4.2 Audio Control|1.4.2 Audio Control \[x\])'
 WCAG 1.4.3:
   - '\[A11Y\]'
-  - '(\[x\] 1.4.3 Contrast (Minimum)|1.4.3 Contrast (Minimum) \[x\])'
+  - '(\[x\] 1.4.3 Contrast \(Minimum\)|1.4.3 Contrast \(Minimum\) \[x\])'
 WCAG 1.4.4:
   - '\[A11Y\]'
   - '(\[x\] 1.4.4 Resize text|1.4.4 Resize text \[x\])'
@@ -90,7 +90,7 @@ WCAG 1.4.5:
   - '(\[x\] 1.4.5 Images of Text|1.4.5 Images of Text \[x\])'
 WCAG 1.4.6:
   - '\[A11Y\]'
-  - '(\[x\] 1.4.6 Contrast (Enhanced)|1.4.6 Contrast (Enhanced) \[x\])'
+  - '(\[x\] 1.4.6 Contrast \(Enhanced\)|1.4.6 Contrast \(Enhanced\) \[x\])'
 WCAG 1.4.7:
   - '\[A11Y\]'
   - '(\[x\] 1.4.7 Low or No Background Audio|1.4.7 Low or No Background Audio \[x\])'
@@ -99,7 +99,7 @@ WCAG 1.4.8:
   - '(\[x\] 1.4.8 Visual Presentation|1.4.8 Visual Presentation \[x\])'
 WCAG 1.4.9:
   - '\[A11Y\]'
-  - '(\[x\] 1.4.9 Images of Text (No Exception)|1.4.9 Images of Text (No Exception) \[x\])'
+  - '(\[x\] 1.4.9 Images of Text \(No Exception\)|1.4.9 Images of Text \(No Exception\) \[x\])'
 WCAG 1.4.10:
   - '\[A11Y\]'
   - '(\[x\] 1.4.10 Reflow|1.4.10 Reflow \[x\])'
@@ -120,7 +120,7 @@ WCAG 2.1.2:
   - '(\[x\] 2.1.2 No Keyboard Trap|2.1.2 No Keyboard Trap \[x\])'
 WCAG 2.1.3:
   - '\[A11Y\]'
-  - '(\[x\] 2.1.3 Keyboard (No Exception)|2.1.3 Keyboard (No Exception) \[x\])'
+  - '(\[x\] 2.1.3 Keyboard \(No Exception\)|2.1.3 Keyboard \(No Exception\) \[x\])'
 WCAG 2.1.4:
   - '\[A11Y\]'
   - '(\[x\] 2.1.4 Character Key Shortcuts|2.1.4 Character Key Shortcuts \[x\])'
@@ -177,7 +177,7 @@ WCAG 2.4.8:
   - '(\[x\] 2.4.8 Location|2.4.8 Location \[x\])'
 WCAG 2.4.9:
   - '\[A11Y\]'
-  - '(\[x\] 2.4.9 Link Purpose (Link Only)|2.4.9 Link Purpose (Link Only) \[x\])'
+  - '(\[x\] 2.4.9 Link Purpose \(Link Only\)|2.4.9 Link Purpose \(Link Only\) \[x\])'
 WCAG 2.4.10:
   - '\[A11Y\]'
   - '(\[x\] 2.4.10 Section Headings|2.4.10 Section Headings \[x\])'

@@ -47,11 +47,14 @@ Example: steps to reproduce the behavior:
 
 
 ---
-## Ticket Details
+## Additional Context
 
-### Auditor ID / URL
+### Auditor ID / URL 
 <!-- If this was found in manual testing, provide a link to the Auditor test run issue -->
 
+
+### Additional Details
+<!-- Add any other context about the feature request here. -->
 
 
 <details>
@@ -66,14 +69,8 @@ Example: steps to reproduce the behavior:
 </details>
 
 ---
-## Screenshots
-<!-- Please provide links to relevant screenshots of the issue -->
+## Screenshots <!-- Please provide links to relevant screenshots of the issue -->
 
-
-
----
-## Additional context
-<!-- Add any other context or screenshots about the feature request here. -->
 
 
 
