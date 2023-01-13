@@ -18,7 +18,6 @@ jobs:
           npm config set "registry" "https://registry.npmjs.org/"
       - run: |
           yarn
-          yarn --cwd=app
       - uses: dequelabs/action-vpat-report@main
         with:
           product-name: axe A11y Metrics POC
