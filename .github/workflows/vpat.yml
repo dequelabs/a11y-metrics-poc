@@ -12,7 +12,7 @@ jobs:
       - uses: dequelabs/action-vpat-report@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          product-name: axe DeveloperHub
+          product-name: axe A11y Metrics POC
           output-file: vpats/{DATE}-{PRODUCT}.md
           vpat-label: VPAT
           additional-labels: "PROD: a11y-poc"
