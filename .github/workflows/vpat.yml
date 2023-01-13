@@ -1,18 +1,50 @@
-name: Generate a VPAT report
+
+name: VPAT
 
 on:
-  workflow_dispatch: # Manually trigger.
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * SUN" # Every Sunday at 00:00.
+    - cron: '0 0 * * SUN' # At 00:00 on Sunday
 
 jobs:
-  generate_report:
+  generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: |
+          npm config set "registry" "https://registry.npmjs.org/"
+          # Pull our private packages from Agora.
+          npm config set "@deque:registry" "https://agora.dequecloud.com/artifactory/api/npm/dequelabs/"
+          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:_auth" "${{ secrets.WALNUT_APP_AGORA_AUTH_TOKEN }}"
+          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:email" "${{ secrets.WALNUT_APP_AGORA_AUTH_EMAIL }}"
+          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:always-auth" "true"
+      - uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-root-${{ hashFiles('yarn.lock') }}
+      - uses: actions/cache@v3
+        with:
+          path: app/node_modules
+          key: ${{ runner.os }}-yarn-app-${{ hashFiles('app/yarn.lock') }}
+      - run: |
+          yarn
+          yarn --cwd=app
       - uses: dequelabs/action-vpat-report@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           product-name: axe A11y Metrics POC
           output-file: vpats/{DATE}-{PRODUCT}.md
           vpat-label: VPAT
-          additional-labels: "PROD: a11y-poc"
+          additional-labels: "PROD: axe-a11y-metrics-poc"
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.PAT }}
+          commit-message: 'docs: Generate a VPAT'
+          branch: auto-generate-vpat-report
+          base: develop
+          title: 'docs: Generate a VPAT'
+          body: |
+            This patch generates a VPAT based on this repository's currently open issues.
+            This PR was opened by a robot :robot: :tada:
