@@ -16,19 +16,6 @@ jobs:
           node-version: 16
       - run: |
           npm config set "registry" "https://registry.npmjs.org/"
-          # Pull our private packages from Agora.
-          npm config set "@deque:registry" "https://agora.dequecloud.com/artifactory/api/npm/dequelabs/"
-          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:_auth" "${{ secrets.WALNUT_APP_AGORA_AUTH_TOKEN }}"
-          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:email" "${{ secrets.WALNUT_APP_AGORA_AUTH_EMAIL }}"
-          npm config set "//agora.dequecloud.com/artifactory/api/npm/dequelabs/:always-auth" "true"
-      - uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-yarn-root-${{ hashFiles('yarn.lock') }}
-      - uses: actions/cache@v3
-        with:
-          path: app/node_modules
-          key: ${{ runner.os }}-yarn-app-${{ hashFiles('app/yarn.lock') }}
       - run: |
           yarn
           yarn --cwd=app
