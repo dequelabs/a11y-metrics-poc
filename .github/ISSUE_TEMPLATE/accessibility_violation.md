@@ -61,8 +61,9 @@ Example: steps to reproduce the behavior:
 <summary>Expand for extra context</summary>
 
 <!-- Select any / all that apply by putting an `x` in the `[ ]` like so `[x]` -->
-- [ ] Found in VPAT
-- [ ] Found by Customer <!-- Provide link to customer ticket below -->
+- [ ] Exists in Production
+- [ ] Discovered during VPAT
+- [ ] Discovered by Customer <!-- Provide link to customer ticket below -->
 - [ ] Found using NVDA
 - [ ] Found using Chrome Screen Reader
 - [ ] Found with special configuration <!-- Specify the additional config below -->
