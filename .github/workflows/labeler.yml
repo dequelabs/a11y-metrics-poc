@@ -2,15 +2,11 @@ name: "Issue Labeler"
 on:
   issues:
     types: [opened, edited]
-
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-    - uses: github/issue-labeler@v2.5 #May not be the latest version
+    - uses: dequelabs/action-a11y-issue-labeler@main
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        configuration-path: .github/labeler.yml
-        not-before: 2020-01-15T02:54:32Z
-        enable-versioned-regex: 0
         include-title: 1
