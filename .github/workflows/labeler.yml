@@ -3,9 +3,10 @@ on:
   issues:
     types: [opened, edited]
 jobs:
-  label:
+  add_labels:
     runs-on: ubuntu-latest
     steps:
+    - uses: dequelabs/action-vpat-labels
     - uses: dequelabs/action-a11y-issue-labeler@main
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
