@@ -18,5 +18,8 @@ jobs:
         CAT4=$(gh issue list -S "label:CAT4 is:open" --json id -L 1000 --repo dequelabs/a11y-metrics-poc | jq '. | length')
         A11Y_SCORE=$(( 100 - $CAT0 * 25 - $CAT1 * 20 - $CAT2 * 10 - $CAT4 * 5 ))
         echo $A11Y_SCORE 
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      
 
         
