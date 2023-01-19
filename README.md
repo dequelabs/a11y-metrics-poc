@@ -2,8 +2,32 @@
 
 ## Badge using JSON
 
-![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/a11y-metrics-poc/main/a11y_metrics__heads_main.json)
+![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/a11y-metrics-poc/auto-generate-vpat-report/a11y_metrics.json)
 
-## Badge using static fields
+JSON file must be publically available for this to work. Options: 
+* Commit file to a user GIST
+* Commit file to a public repo
+* Host a public endpoint that responds with this JSON
 
-![Accessibility Badge](https://img.shields.io/badge/A11y%20Metrics---82-red)
+## Instructions:
+
+1. Copy the following files to your repo:
+  * ./github/ISSUE_TEMPLATE/accessibility_violation.md
+  * ./github/workflows/categorizer.yml
+  * ./github/workflows/labeler.yml
+  * ./github/workflows/vpat.yml
+2. Update `vpat.yml` to include your product name and any additional labels
+3. Create the following labels:
+  * A11Y
+  * CAT0
+  * CAT1
+  * CAT2
+  * CAT3
+  * CAT4
+  * Production
+  * Customer
+  * Released
+4. Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name
+```
+![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
+```
