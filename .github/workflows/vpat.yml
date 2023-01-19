@@ -36,7 +36,7 @@ jobs:
           else
             COLOR="red"
           fi
-          echo "{\"schemaVersion\":1,\"label\":\"A11Y Metrics Score\",\"message\":\"$($A11Y_SCORE)\",\"color\":\"$(COLOR)\"}" > a11y_metrics.json
+          echo "{\"schemaVersion\":1,\"label\":\"A11Y Metrics Score\",\"message\":\"$A11Y_SCORE\",\"color\":\"$COLOR\"}" > a11y_metrics.json
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           THRESHOLD: 50
