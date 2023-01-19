@@ -31,18 +31,15 @@ jobs:
           CAT3=$(gh issue list -S "label:CAT3 is:open" --json id -L 1000 --repo dequelabs/a11y-metrics-poc | jq '. | length')
           CAT4=$(gh issue list -S "label:CAT4 is:open" --json id -L 1000 --repo dequelabs/a11y-metrics-poc | jq '. | length')
           A11Y_SCORE=$(( 100 - $CAT0 * 25 - $CAT1 * 20 - $CAT2 * 10 - $CAT4 * 5 ))
-      - if: ${{ $A11Y_SCORE > $THRESHOLD }}
-        run: COLOR = "green"
-        env:
-          A11Y_SCORE: "${{ A11Y_SCORE }}"
-      - if: ${{ A11Y_SCORE > $THRESHOLD }}
-        run: COLOR = "red"
-        env:
-          A11Y_SCORE: "${{ A11Y_SCORE }}"
-      - run: |
-          echo "{\"schemaVersion\":1,\"label\":\"A11Y Metrics Score\",\"message\":\"$A11Y_SCORE\",\"color\":\"$COLOR\"}" > a11y_metrics.json
+          if [[ $A11Y_SCORE -gt $THRESHOLD ]]
+            COLOR = "green"
+          else
+            COLOR = "red"
+          fi
+          echo "{\"schemaVersion\":1,\"label\":\"A11Y Metrics Score\",\"message\":\"$($A11Y_SCORE)\",\"color\":\"$(COLOR)\"}" > a11y_metrics.json
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          THRESHOLD: 50
       - uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
