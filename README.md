@@ -17,7 +17,8 @@ JSON file must be publically available for this to work. Options:
   * ./github/workflows/labeler.yml
   * ./github/workflows/vpat.yml
 2. Update `vpat.yml` to include your product name and any additional labels
-3. Create the following labels:
+3. Create the `vpats` folder referenced in `vpat.yml`. You may need to add an empty text file to add the folder in GitHub.
+4. Create the following labels:
   * A11Y
   * CAT0
   * CAT1
@@ -27,7 +28,7 @@ JSON file must be publically available for this to work. Options:
   * Production
   * Customer
   * Released
-4. Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name
+5. Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name
 ```
 ![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
 ```
