@@ -29,6 +29,11 @@ JSON file must be publically available for this to work. Options:
   * Production
   * Customer
   * Released
+  * Minor
+  * Moderate
+  * Serious
+  * Critical
+  * Blocker
 5. Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name
 ```
 ![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
