@@ -16,7 +16,7 @@ JSON file must be publically available for this to work. Options:
   * ./github/workflows/categorizer.yml
   * ./github/workflows/labeler.yml
   * ./github/workflows/vpat.yml
-  * ./github/a11y-metrics.yml
+  * ./github/a11y-metrics.yaml
 2. Update `vpat.yml` to include your product name and any additional labels
 3. Create the `vpats` folder referenced in `vpat.yml`. You may need to add an empty text file to add the folder in GitHub.
 4. Create the following labels:
