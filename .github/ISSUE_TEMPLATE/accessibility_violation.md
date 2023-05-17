@@ -20,8 +20,8 @@ Thank you for taking the time to create this Accessibility Issue!
 ### Impact
 <!-- Please select the impact by putting an `x` in the `[ ]` like so `[x]` -->
 - [ ] Blocker
-- [ ] Serious
 - [ ] Critical
+- [ ] Serious
 - [ ] Moderate
 - [ ] Minor
 
