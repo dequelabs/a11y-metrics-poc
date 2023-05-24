@@ -18,6 +18,8 @@ JSON file must be publically available for this to work. Options:
     * `./github/workflows/vpat.yml`
     * `./github/a11y-metrics.yaml`
 2. Update `vpat.yml` to include your product name and any additional labels
+    * Update the `product-name` input of the dequelabs/action-vpat-report action
+    * Update the `--repo` option on each command line that stores a `CAT{0-4}` local variable
 3. Create the `vpats` folder referenced in `vpat.yml`. You may need to add an empty text file to add the folder in GitHub.
 4. Create the following labels:
     * A11Y
