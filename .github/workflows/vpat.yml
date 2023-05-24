@@ -22,7 +22,6 @@ jobs:
         with:
           product-name: axe A11y Metrics POC
           output-file: vpats/{DATE}-{PRODUCT}.md
-          vpat-label: VPAT
       - run: |
           CAT0=$(gh issue list -S "label:CAT0 is:open" --json id -L 1000 --repo dequelabs/a11y-metrics-poc | jq '. | length')
           CAT1=$(gh issue list -S "label:CAT1 is:open" --json id -L 1000 --repo dequelabs/a11y-metrics-poc | jq '. | length')
