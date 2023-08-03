@@ -9,7 +9,9 @@ JSON file must be publically available for this to work. Options:
 * Commit file to a public repo
 * Host a public endpoint that responds with this JSON
 
-## Instructions:
+## Generating VPAT reports
+
+To automatically generate VPAT reports based on the issues in your repo, follow these instructions:
 
 1. Copy the following files to your repo:
     * `./github/ISSUE_TEMPLATE/accessibility_violation.md`
@@ -43,7 +45,7 @@ JSON file must be publically available for this to work. Options:
 ![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
 ```
 
-## When to run the VPAT workflow
+### When to run the VPAT workflow
 
 By default, the VPAT workflow is triggered by two events:
 
@@ -53,3 +55,18 @@ By default, the VPAT workflow is triggered by two events:
 You can modify the `on` trigger events to something sensible for your project's release cycle. For example, you may want to trigger the workflow only when a new release is created using the `release` event trigger. Or you may want to trigger the workflow when commits are pushed to your `main` branch using the `push` event trigger.
 
 See [Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) for more information.
+
+## Publishing VPAT reports
+
+To automatically publish your project's most recent VPAT report to the product docs site, follow these instructions:
+
+1. Copy `./github/workflows/vpat-publisher.yml` to your repo
+2. Make the following changes to the `vpat-publisher.yml` workflow file:
+    * Configure the `on` trigger event for your project:
+        * `branches` - Branch whose latest VPAT report should be published (typically your production branch)
+        * `paths` - The location of the VPAT reports in your repo
+    * Configure the inputs for the `dequelabs/action-vpat-publish` action:
+        * `target-repo-github-token` - GitHub token with write access to the product-docs-site repo
+        * `product-id` - The product ID used to identify your product on the docs site
+
+Once configured, and when triggered, this workflow will open a pull request into the product-docs-site repo.

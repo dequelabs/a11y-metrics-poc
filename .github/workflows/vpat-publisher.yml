@@ -1,0 +1,35 @@
+name: Publish VPAT
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'vpats/*'
+
+jobs:
+  upload-vpat:
+    runs-on: ubuntu-latest
+    env:
+      LATEST_VPAT_FILE: latest-vpat.html
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Convert most recent VPAT to HTML
+        uses: dequelabs/action-vpat-to-html@main
+        id: vpat-to-html
+        with:
+          product-name: My Product
+          vpat-location: vpats
+
+      - name: Write HTML to filesystem
+        run: echo -e ${{ steps.vpat-to-html.outputs.stringified-html }} > ${{ env.LATEST_VPAT_FILE }}
+
+      - name: Publish VPAT to the docs site
+        uses: dequelabs/action-vpat-publish@main
+        with:
+          target-repo: dequelabs/product-docs-site
+          target-repo-base-branch: develop
+          target-repo-github-token: <TOKEN_FOR_DOCS_SITE>
+          product-id: <your-product-id>
+          vpat-file: ${{ env.LATEST_VPAT_FILE }}
