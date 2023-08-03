@@ -18,8 +18,10 @@ JSON file must be publically available for this to work. Options:
     * `./github/workflows/vpat.yml`
     * `./github/a11y-metrics.yaml`
 2. Update `vpat.yml` to include your product name and any additional labels
-    * Update the `product-name` input of the dequelabs/action-vpat-report action
+    * Update the `product-name` input of the step that uses the dequelabs/action-vpat-report action
     * Update the `--repo` option on each command line that stores a `CAT{0-4}` local variable
+    * **Optional**: Modify the `on` trigger events to something sensible for your project's release cycle
+        * See [When to run the VPAT workflow](#when-to-run-the-vpat-workflow)
 3. Create the `vpats` folder referenced in `vpat.yml`. You may need to add an empty text file to add the folder in GitHub.
 4. Create the following labels:
     * A11Y
@@ -40,3 +42,14 @@ JSON file must be publically available for this to work. Options:
 ```
 ![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
 ```
+
+## When to run the VPAT workflow
+
+By default, the VPAT workflow is triggered by two events:
+
+1. `workflow_dispatch` - Manually trigger the workflow using the GitHub API, CLI, or browser interface
+2. `schedule` - Every week on Sunday at 12:00 AM UTC
+
+You can modify the `on` trigger events to something sensible for your project's release cycle. For example, you may want to trigger the workflow only when a new release is created using the `release` event trigger. Or you may want to trigger the workflow when commits are pushed to your `main` branch using the `push` event trigger.
+
+See [Events that trigger workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) for more information.
