@@ -13,7 +13,7 @@ Thank you for taking the time to create this Accessibility Issue!
 ## Issue Details
 ---
 ### Short Description
-<!-- Please provide a short descritpion of the issue -->
+<!-- Please provide a short description of the issue -->
 
 
 
