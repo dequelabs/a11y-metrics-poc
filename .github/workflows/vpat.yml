@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           THRESHOLD: 50
-      - uses: peter-evans/create-pull-request@v4
+      - uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'docs: Generate a VPAT'
