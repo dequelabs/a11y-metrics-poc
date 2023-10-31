@@ -13,7 +13,7 @@ jobs:
     env:
       LATEST_VPAT_FILE: latest-vpat.html
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Convert most recent VPAT to HTML
         uses: dequelabs/action-vpat-to-html@main
