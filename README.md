@@ -1,53 +1,71 @@
 # a11y-metrics-poc
 
-## Badge using JSON
+> Tools for generating accessibility metrics and reports for GitHub repositories.
 
-![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/a11y-metrics-poc/auto-generate-vpat-report/a11y_metrics.json)
+## Configuring your repo
 
-JSON file must be publically available for this to work. Options: 
-* Commit file to a user GIST
-* Commit file to a public repo
-* Host a public endpoint that responds with this JSON
+Use the following instructions to configure your repo to automatically generate VPAT reports based on the issues in your repo.
 
-## Generating VPAT reports
+### Step 1: Add templates, workflows, and config files
 
-To automatically generate VPAT reports based on the issues in your repo, follow these instructions:
+Copy the following files to your repo:
 
-1. Copy the following files to your repo:
-    * `./github/ISSUE_TEMPLATE/accessibility_violation.md`
-    * `./github/workflows/categorizer.yml`
-    * `./github/workflows/labeler.yml`
-    * `./github/workflows/vpat.yml`
-    * `./github/a11y-metrics.yaml`
-2. Update `vpat.yml` to include your product name and any additional labels
-    * Update the `product-name` input of the step that uses the dequelabs/action-vpat-report action
-    * Update the `--repo` option on each command line that stores a `CAT{0-4}` local variable
-    * **Optional**: Modify the `on` trigger events to something sensible for your project's release cycle
-        * See [When to run the VPAT workflow](#when-to-run-the-vpat-workflow)
-3. Create the `vpats` folder referenced in `vpat.yml`. You may need to add an empty text file to add the folder in GitHub.
-4. Create the following labels:
-    * A11Y
-    * CAT0
-    * CAT1
-    * CAT2
-    * CAT3
-    * CAT4
-    * Production
-    * Customer
-    * Released
-    * Minor
-    * Moderate
-    * Serious
-    * Critical
-    * Blocker
-5. Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name
+* `./github/ISSUE_TEMPLATE/accessibility_violation.md`
+* `./github/workflows/categorizer.yml`
+* `./github/workflows/labeler.yml`
+* `./github/workflows/vpat.yml`
+* `./github/a11y-metrics.yaml`
+
+### Step 2: Define VPAT storage location
+
+Choose or create a directory that will store your VPAT reports. For example, you might create a `/vpats` directory in your repo. If you're creating a new directory, you may need to add an empty text file to add the folder in GitHub.
+
+### Step 3: Update the VPAT workflow
+
+Make the following changes to the `vpat.yml` workflow file:
+
+* In the step named "Generate VPAT file"
+    * Update the `product-name` input to match your product name
+    * Make sure the `output-file` input matches the path of your desired VPAT storage location
+* In the step named "Generate a11y metrics score"
+    * Update each `--repo` option to match your repo name
+* **Optional**: Modify the `on` trigger events to something sensible for your project's release cycle (see [When to run the VPAT workflow](#when-to-run-the-vpat-workflow))
+
+### Step 4: Create labels
+
+Create the following labels in your project. These labels are required for the workflows to function properly.
+
+These labels must be created exactly as shown:
+
+* CAT0
+* CAT1
+* CAT2
+* CAT3
+* CAT4
+
+These labels can be created as shown, or customized (see [Custom Labels](./docs/custom-labels.md)):
+
+* A11Y
+* Blocker
+* Critical
+* Serious
+* Moderate
+* Minor
+* Production
+* Customer
+* Released
+
+### Step 5 (Optional): Add Badge to README
+
+Copy the `Accessibility Badge` to your README.md. Update `<REPO_NAME>` with your repository name.
+
 ```
 ![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/<REPO_NAME>/auto-generate-vpat-report/a11y_metrics.json)
 ```
 
-### When to run the VPAT workflow
+## When to run the VPAT workflow
 
-By default, the VPAT workflow is triggered by two events:
+By default, the `vpat.yml` workflow is triggered by two events:
 
 1. `workflow_dispatch` - Manually trigger the workflow using the GitHub API, CLI, or browser interface
 2. `schedule` - Every week on Sunday at 12:00 AM UTC
@@ -70,3 +88,12 @@ To automatically publish your project's most recent VPAT report to the product d
         * `product-id` - The product ID used to identify your product on the docs site
 
 Once configured, and when triggered, this workflow will open a pull request into the product-docs-site repo.
+
+## Badge using JSON
+
+![Accessibility Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dequelabs/a11y-metrics-poc/auto-generate-vpat-report/a11y_metrics.json)
+
+The JSON file must be publically available for this to work. Options: 
+* Commit file to a user GIST
+* Commit file to a public repo
+* Host a public endpoint that responds with this JSON
