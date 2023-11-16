@@ -2,7 +2,7 @@
 name: Accessibility Violation
 about: Document an accessibility violation to be fixed
 title: '[A11Y] '
-labels: ['A11Y', "PROD: a11y-poc"]
+labels: ['A11Y']
 assignees: ''
 
 ---
